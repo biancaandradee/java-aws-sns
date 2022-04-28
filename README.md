@@ -3,15 +3,15 @@
 - A funcionalidade pub/sub de A2A fornece tópicos para sistemas de mensagens de alta taxa de transferência baseados em push e de muitos para muitos entre sistemas distribuídos, microsserviços e aplicações sem servidor orientadas por eventos. Usando tópicos do Amazon SNS, seus sistemas editores podem repassar mensagens para um grande número de sistemas de assinantes, incluindo filas do Amazon SQS, funções do AWS Lambda e endpoints HTTPS e o Amazon Kinesis Data Firehose para processamento paralelo. A funcionalidade A2P permite enviar mensagens para usuários em grande escala por SMS, push de dispositivos móveis e e-mail.
 
 ## Clonando projeto de *torneseumprogramador*
-git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
+git clone https://github.com/torneseumprogramador/java_aws_sns_sender.git
 
 # Criando projeto
 mvn archetype:generate -DgroupId=br.com.sqs_sender -DartifactId=sqs_sender -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
-
 # Doc MVN
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
-### gerar com manifest
+
+### Gerar com manifest
 https://www.sohamkamani.com/java/cli-app-with-maven/
 
 # Exemplo Code Base
@@ -27,20 +27,20 @@ https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2
 - mvn install: install the package into the local repository, for use as a dependency in other projects locally
 - mvn deploy: done in an integration or release environment, copies the final package to the remote repository for sharing with other developers and projects.
 
-# como rodar
-- configurar o seu .bash_profile ou .bashrc
+## Configurando as variáveis de ambiente
+- configurar o .bash_profile ou .bashrc
 ```shell
 code ~/.bash_profile
 
-export AWS_ACCESS_KEY="SUA_KEY"
-export AWS_SECRET_KEY="SEU_SECRET"
+export AWS_ACCESS_KEY="SUA_ACCESS_KEY"
+export AWS_SECRET_KEY="SUA_SECRET_KEY"
 
 source ~/.bash_profile
 ```
 
-# rodar o comando
+## Rodando o projeto
 ```shell
-./buld.sh
+./build.sh
 ./start.sh
 ```
 
