@@ -5,16 +5,16 @@
 ## Clonando projeto de *torneseumprogramador*
 git clone https://github.com/torneseumprogramador/java_aws_sns_sender.git
 
-# Criando projeto
+## Criando projeto
 mvn archetype:generate -DgroupId=br.com.sqs_sender -DartifactId=sqs_sender -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
-# Doc MVN
+## Doc MVN
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 
 ### Gerar com manifest
 https://www.sohamkamani.com/java/cli-app-with-maven/
 
-# Exemplo Code Base
+## Exemplo Code Base
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2
 
 ### MVN Options
@@ -44,5 +44,5 @@ source ~/.bash_profile
 ./start.sh
 ```
 
-# SNS send to SQS
+## SNS send to SQS
 https://www.youtube.com/watch?v=3y8YubKdtww
