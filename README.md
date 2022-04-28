@@ -1,16 +1,23 @@
-# criando projeto
+# AMAZON SNS (Simple Notification Service)
+- É um serviço de mensagens totalmente gerenciado para a comunicação de aplicação para aplicação (A2A) e de aplicação para pessoa (A2P).
+- A funcionalidade pub/sub de A2A fornece tópicos para sistemas de mensagens de alta taxa de transferência baseados em push e de muitos para muitos entre sistemas distribuídos, microsserviços e aplicações sem servidor orientadas por eventos. Usando tópicos do Amazon SNS, seus sistemas editores podem repassar mensagens para um grande número de sistemas de assinantes, incluindo filas do Amazon SQS, funções do AWS Lambda e endpoints HTTPS e o Amazon Kinesis Data Firehose para processamento paralelo. A funcionalidade A2P permite enviar mensagens para usuários em grande escala por SMS, push de dispositivos móveis e e-mail.
+
+## Clonando projeto de *torneseumprogramador*
+git clone https://github.com/torneseumprogramador/java_aws_sqs_producer_sender.git
+
+# Criando projeto
 mvn archetype:generate -DgroupId=br.com.sqs_sender -DartifactId=sqs_sender -DarchetypeArtifactId=maven-archetype-quickstart -DarchetypeVersion=1.4 -DinteractiveMode=false
 
 
-# doc mvn
+# Doc MVN
 https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html
 ### gerar com manifest
 https://www.sohamkamani.com/java/cli-app-with-maven/
 
-# exemplo code base
+# Exemplo Code Base
 https://github.com/awsdocs/aws-doc-sdk-examples/tree/main/javav2
 
-### mvn options
+### MVN Options
 - mvn validate: validate the project is correct and all necessary information is available
 - mvn compile: compile the source code of the project
 - mvn test: test the compiled source code using a suitable unit testing framework. These tests should not require the code be - packaged or deployed
